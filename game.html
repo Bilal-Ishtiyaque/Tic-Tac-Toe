@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <li> <i class="fa-solid fa-house fa-xl" style="color: rgb(145, 240, 205);"></i> <span> Home Page </span></i>
+            </li>
+            <li><span>Levels</span> <i class="fa-solid fa-layer-group fa-2xl" style="color: rgb(76, 74, 74);"></i></li>
+            <li><span>Game lives</span> <i class="fa-solid fa-heart fa-2xl" style="color: red;"></i></li>
+
+        </ul>
+
+    </nav>
+
+    <img src="poper.gif" id="poper">
+
+    <main>
+        <div>
+            <p>TIC TAC TOE</p>
+        </div>
+        <div class="game-container">
+            <div class="box BB BR" id="0"></div>
+            <div class="box BL BR BB" id="1"></div>
+            <div class="box BL BB" id="2"></div>
+            <div class="box BT BR BB" id="3"></div>
+            <div class="box BT BL BR BB" id="4"></div>
+            <div class="box BL BB BT" id="5"></div>
+            <div class="box BT BR" id="6"></div>
+            <div class="box BT BL BR" id="7"></div>
+            <div class="box BT BL " id="8"></div>
+        </div>
+    </main>
+
+    <div class="show-up">
+        <div id="draw">
+            <div class="msg"></div>
+            <div class="again"><i class="fa-solid fa-rotate-right fa-2xl"></i></div>
+        </div>
+        <button id="play">PLAY</button>
+        <div id="turnBox">
+            <div class="turn">TURN FOR:</div>
+            <div class="XO"></div>
+            <div class="exre">
+                <button class="exit"><i class='fa-solid fa-xmark fa-sm'></i></button>
+                <button class="restart"><i class="fa-solid fa-rotate-right fa-sm"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="confirmExit">
+
+
+        <div class="alertBox">
+            <div class="sure"></div>
+            <div class="yesno-Box">
+                <button class="yes">yes</button>
+                <button class="no">no</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="tictoe.js"></script>
+</body>
+
+</html>

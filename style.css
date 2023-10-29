@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::before, ::after{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 16px = 1.053vw; */
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    background-color: #bebebe;
+    overflow-x: hidden;
+}
+
+
+nav {
+    background-color: #2f2f2f;
+    width: 100%;
+    position: fixed;
+}
+
+nav ul {
+
+    list-style-type: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: black;
+}
+
+#poper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:none;
+    z-index: 2;
+}
+
+main {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 5rem;
+
+}
+
+main ::selection {
+    background-color: transparent;
+}
+
+div p {
+    color: yellow;
+    -webkit-text-stroke: 2px black;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.game-container {
+    font-family: cursive;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+
+}
+
+.BT {
+    border-top: 2px solid black;
+}
+
+.BR {
+    border-right: 2px solid black;
+}
+
+.BL {
+    border-left: 2px solid black;
+}
+
+.BB {
+    border-bottom: 2px solid black;
+}
+
+.box {
+   
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+    
+}
+
+.box:hover {
+    background-color: rgb(182, 255, 255);
+
+}
+
+
+.show-up {
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+    height: 20%;
+    margin-top:2rem ;
+    
+    
+}
+
+.show-up #draw{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 500ms cubic-bezier(.87,-.41,.19,1.44);
+    background-color: gainsboro;
+    z-index: 3;
+}
+
+
+#draw .msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3rem;
+    margin: 1rem 0 0.818rem 0 ;
+}
+
+#draw .again{
+    font-size:0.818rem ;
+    text-align: center;
+}
+
+
+#draw .again i{
+    cursor: pointer;
+    color: #700000;
+    z-index: 5;
+}
+
+
+.show-up #play{
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #51d6a0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0.300rem 1rem ;
+    width: 170px;
+    animation: bounce .4s ease infinite alternate;
+    
+}
+
+
+
+#turnBox{
+    font-family: cursive;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+
+
+.turn{
+    font-size: 1.5rem;
+}
+
+.show-up div.XO i{
+    font-size:3rem ;
+    color: rgb(65, 146, 14);
+}
+
+button.exit, button.restart{
+    font-size: 0.800rem;
+    font-family: cursive;
+    background-color: rgb(199, 216, 71);
+    color: white;
+    padding: 0.1rem 0.818rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+
+.exre{
+    
+}
+
+button.restart{
+    background-color: rgb(28, 50, 119);
+}
+
+button.exit:hover{
+
+    background-color: rgb(182, 210, 57);
+
+}
+
+button.restart:hover{
+
+    background-color: rgb(8, 52, 184);
+
+}
+
+
+#confirmExit{
+
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+
+#confirmExit .alertBox{
+    height: 100%;
+    width: 200px;
+    background-color: #2f2f2f;
+    border-radius:50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    animation: bounce .4s ease infinite alternate;
+}
+
+.sure{
+   
+}
+
+.yesno-Box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.alertBox .yes, .no{
+
+    font-size: 0.800rem;
+    font-family: cursive;
+    border: none;
+    border-radius: 20px;
+    padding: 0.1rem 0.818rem;
+    cursor: pointer;
+
+}
+
+.alertBox .yes{}
+
+.alertBox .no{ background-color: purple; color: white;}
+
+.alertBox .yes:hover{ background-color: rgb(117, 112, 112);}
+
+.alertBox .no:hover{ background-color: rgb(180, 30, 180);}
+
+
+
+
+@keyframes bounce {
+    
+    100% {
+      transform:translateY(-10px);
+    }
+
+}
+
+
+.show-up #play:hover{
+    box-shadow: 0 0 3px 1.5px #2c2b2b;
+}
+
+
+@media (max-width : 500px) {
+    .show-up #play{
+        width: 100px;
+    }
+
+
+}
+
+@media (max-width : 420px) {
+
+    ul {
+        font-size: 0.818rem;
+    }
+
+    li span {
+        display: none;
+    }
+
+    div p {
+        font-size: 1.5rem ;
+    }
+
+    #draw .msg{
+        
+        font-size: 2rem;
+       
+    }
+
+}
+
+/* 
+@media (max-width : 350px) {
+
+   
+} */
+
+/* 
+@media (max-width : 250px) {
+
+   
+   
+} */
