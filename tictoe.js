@@ -42,12 +42,9 @@ let text = `${xy[Math.round(Math.random())]}`;
 // DISPLAYING <i> ICON OF X || O ACCORDING TO "text" VARIABLE'S VALUE --->
 
 if (text == "X") {
-    text = "O";
-    turnXO.innerHTML = "<i class='fa-regular fa-circle fa-2xl'></i>";
-} else if (text == "O") {
-    text = "X";
     turnXO.innerHTML = "<i class='fa-solid fa-xmark fa-2xl'></i>";
-
+} else if (text == "O") {
+    turnXO.innerHTML = "<i class='fa-regular fa-circle fa-2xl'></i>";
 }
 
 // GAME LOGIC PATTERN / CRITERIA --->
