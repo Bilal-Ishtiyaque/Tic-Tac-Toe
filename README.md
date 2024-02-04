@@ -13,3 +13,11 @@ a Tic Tac Toe ❌⭕️ game that I built from scratch using HTML, CSS & JavaScr
 🔊 𝗦𝗼𝘂𝗻𝗱 𝗘𝗳𝗳𝗲𝗰𝘁𝘀: Sound effects for clicking, winning, draw, restarting and also a party popper GIF to celebrate the winning.
 
 📏 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃𝗲 𝗗𝗲𝘀𝗶𝗴𝗻 𝗨𝘀𝗶𝗻𝗴 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 : JavaScript dynamically adjusts the game container's dimensions based on the user's device. It constantly monitors the window's dimensions and recalculates the container's width and height to fit within the limits I have defined.
+
+# LinkedIn video link ⬇️
+[Tic-Tac-Toe Video](https://www.linkedin.com/feed/update/urn:li:activity:7124163541489659904/?originTrackingId=%2BCuRp75iRYWCSass11GPqg%3D%3D)
+
+
+# Preview :
+
+![Screenshot (367)](https://github.com/Bilal-Ishtiyaque/Tic-Tac-Toe/assets/139645574/8447b5c2-35e0-43ea-a7f8-33ac597cc6ee)
