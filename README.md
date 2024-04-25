@@ -15,7 +15,7 @@ a Tic Tac Toe ❌⭕️ game that I built from scratch using HTML, CSS & JavaScr
 📏 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃𝗲 𝗗𝗲𝘀𝗶𝗴𝗻 𝗨𝘀𝗶𝗻𝗴 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 : JavaScript dynamically adjusts the game container's dimensions based on the user's device. It constantly monitors the window's dimensions and recalculates the container's width and height to fit within the limits I have defined.
 
 # LinkedIn video link ⬇️
-[Tic-Tac-Toe Video](https://www.linkedin.com/feed/update/urn:li:activity:7124163541489659904/?originTrackingId=%2BCuRp75iRYWCSass11GPqg%3D%3D)
+[Tic-Tac-Toe Video](https://www.linkedin.com/feed/update/urn:li:activity:7189281273788448768/)
 
 
 # Preview :
